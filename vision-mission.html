@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>UEP Binalonan | GROUP 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f8f6;
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            line-height: 1.5;
+            color: #1a2f2a;
+        }
+
+        .top-header {
+            background: #ffffff;
+            padding: 16px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 1px solid #e0ece6;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-img {
+            height: 75px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .brand-text h1 {
+            color: #8b2c1d;
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 4px;
+        }
+
+        .brand-text p {
+            color: #1e5a4f;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+
+        .enrollment-tag {
+            background: #1e5a4f;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.4px;
+        }
+
+        .navbar {
+            background: #8b2c1d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 14px 22px;
+            transition: 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom-color: #f0b27a;
+        }
+
+        .page-container {
+            min-height: 60vh;
+            padding: 40px 5%;
+        }
+
+        .page-title {
+            color: #8b2c1d;
+            font-size: 2rem;
+            font-weight: 700;
+            border-left: 6px solid #e0a878;
+            padding-left: 20px;
+            margin-bottom: 32px;
+        }
+
+        .info-footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin: 20px 5% 40px;
+        }
+
+        .value-box {
+            background: #fefaf4;
+            padding: 24px 28px;
+            border-radius: 24px;
+            flex: 1;
+            border: 1px solid #f0e4d6;
+        }
+
+        .value-box h3 {
+            color: #8b2c1d;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+
+        .value-list {
+            list-style: none;
+        }
+
+        .value-list li {
+            margin-bottom: 14px;
+            font-weight: 500;
+            color: #2a5a4d;
+            border-left: 3px solid #e0a878;
+            padding-left: 14px;
+        }
+
+        .campus-box {
+            background: #eef5f2;
+            padding: 24px 28px;
+            border-radius: 24px;
+            flex: 1;
+            border: 1px solid #dcebe4;
+        }
+
+        .campus-box h3 {
+            color: #1e5a4f;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .main-footer {
+            background-color: #0e3d35;
+            color: #e0f0ea;
+            padding: 28px 5% 24px;
+            text-align: center;
+            border-top-left-radius: 28px;
+            border-top-right-radius: 28px;
+            margin-top: 20px;
+        }
+
+        .footer-group {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 780px) {
+            .brand-text h1 { font-size: 1.2rem; }
+            .logo-img { height: 55px; }
+            .nav-links a { padding: 12px 14px; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="top-header">
+    <div class="brand">
+        <img class="logo-img" src="logo.png" alt="UEP Logo">
+        <div class="brand-text">
+            <h1>UNIVERSITY OF EASTERN PANGASINAN</h1>
+            <p>Binalonan, Pangasinan | Center for Excellence and Virtue</p>
+        </div>
+    </div>
+    <div class="enrollment-tag">ONLINE ENROLLMENT ONGOING</div>
+</header>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="outreach.html">OUTREACH</a>
+            <a href="vision-mission.html">VISION & MISSION</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="group2.html">DEVELOPERS</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page-container">
+    <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+        <div style="flex: 1; background: white; border-radius: 28px; padding: 32px; border: 1px solid #e7efeb;">
+            <h2 style="color: #8b2c1d; font-size: 1.8rem; border-bottom: 3px solid #e0a878; display: inline-block; padding-bottom: 6px;">Vision</h2>
+            <div style="font-size: 0.8rem; color: #6f8a80; margin: 16px 0; font-style: italic;">What we aspire to become</div>
+            <p style="line-height: 1.7;">A leading local university known to develop excellent and virtuous professionals who are catalysts of progress for both the local and global communities.</p>
+        </div>
+        <div style="flex: 1; background: white; border-radius: 28px; padding: 32px; border: 1px solid #e7efeb;">
+            <h2 style="color: #8b2c1d; font-size: 1.8rem; border-bottom: 3px solid #e0a878; display: inline-block; padding-bottom: 6px;">Mission</h2>
+            <div style="font-size: 0.8rem; color: #6f8a80; margin: 16px 0; font-style: italic;">Why we exist</div>
+            <p style="line-height: 1.7;">University of Eastern Pangasinan is dedicated to producing highly competent and morally responsible UEPians through innovation, industry-focused education, sustainable research, and value-based curriculum. We commit to shaping ethical trailblazers, bringing our principle-centered culture, defining our values of Maka-Diyos, Marunong, and Malinis.</p>
+        </div>
+    </div>
+</div>
+
+<div class="info-footer-row">
+    <div class="value-box">
+        <h3>UEP Core Values</h3>
+        <ul class="value-list">
+            <li><strong>Maka-Diyos</strong> – Faith-centered life and ethical responsibility</li>
+            <li><strong>Marunong</strong> – Mastery through knowledge, innovation, and excellence</li>
+            <li><strong>Malinis</strong> – Integrity, transparency, and principled leadership</li>
+        </ul>
+    </div>
+    <div class="campus-box">
+        <h3>Binalonan Campus Hub</h3>
+        <address>
+            Mc Arthur Highway, Canarvacanan, Binalonan, Pangasinan 2436<br>
+            Telephone: (075) 555 1234<br>
+            Email: registrar@uep.edu.ph<br>
+            Office Hours: Monday – Friday, 8:00 AM – 5:00 PM
+        </address>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-group">GROUP 2 © 2026 | ENRIQUEZ, RINGAIS, GABAT, SERMISE, PANDE, FRISCO, OBLIGACION, MACARAEG</div>
+    <div style="font-size: 0.7rem; opacity: 0.8;">UEP Binalonan Official Information Portal — All Rights Reserved</div>
+</footer>
+
+</body>
+</html>
